@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Climate Analytics Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+
+  <aside class="sidebar">
+
+    <h2>ClimateAI</h2>
+
+    <nav>
+
+      <a href=" ">Dashboard</a >
+      <a href="#">Forecast</a >
+      <a href="#">Analytics</a >
+      <a href="#">Air Quality</a >
+      <a href="#">Prediction</a >
+
+    </nav>
+
+  </aside>
+
+  <!-- Main -->
+
+  <main class="main-content">
+
+    <!-- Header -->
+
+    <header>
+
+      <div>
+
+        <h1>Climate Analytics Dashboard</h1>
+
+        <p>Weather Forecast & Environmental Analytics</p >
+
+      </div>
+
+      <div class="time-box">
+
+        <span id="currentTime"></span>
+
+      </div>
+
+    </header>
+
+    <!-- KPI -->
+
+    <section class="dashboard">
+
+      <div class="card">
+
+        <h2>26°C</h2>
+
+        <p>Current Temperature</p >
+
+      </div>
+
+      <div class="card">
+
+        <h2>71%</h2>
+
+        <p>Humidity Level</p >
+
+      </div>
+
+      <div class="card">
+
+        <h2>12 km/h</h2>
+
+        <p>Wind Speed</p >
+
+      </div>
+
+      <div class="card">
+
+        <h2>Good</h2>
+
+        <p>Air Quality Index</p >
+
+      </div>
+
+    </section>
+
+    <!-- AI Panel -->
+
+    <section class="ai-panel">
+
+      <h3>AI Forecast Insights</h3>
+
+      <div class="ai-grid">
+
+        <div class="ai-card">
+
+          <h4>Temperature Prediction</h4>
+
+          <p>
+            Tomorrow temperature expected to increase by 2°C.
+          </p >
+
+        </div>
+
+        <div class="ai-card">
+
+          <h4>Rain Probability</h4>
+
+          <p>
+            Rain possibility increased to 65% this weekend.
+          </p >
+
+        </div>
+
+        <div class="ai-card">
+
+          <h4>Environmental Analysis</h4>
+
+          <p>
+            Air quality remains stable in urban regions.
+          </p >
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Charts -->
+
+    <section class="charts-grid">
+
+      <div class="chart-card">
+
+        <h3>Temperature Trend</h3>
+
+        <canvas id="tempChart"></canvas>
+
+      </div>
+
+      <div class="chart-card">
+
+        <h3>Humidity Analytics</h3>
+
+        <canvas id="humidityChart"></canvas>
+
+      </div>
+
+    </section>
+
+    <!-- Bottom -->
+
+    <section class="bottom-grid">
+
+      <div class="table-card">
+
+        <h3>Weekly Forecast</h3>
+
+        <table>
+
+          <tr>
+            <th>Day</th>
+            <th>Weather</th>
+            <th>Temp</th>
+          </tr>
+
+          <tr>
+            <td>Monday</td>
+            <td>Sunny</td>
+            <td>26°C</td>
+          </tr>
+
+          <tr>
+            <td>Tuesday</td>
+            <td>Cloudy</td>
+            <td>24°C</td>
+          </tr>
+
+          <tr>
+            <td>Wednesday</td>
+            <td>Rainy</td>
+            <td>22°C</td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div class="chart-card">
+
+        <h3>Weather Distribution</h3>
+
+        <canvas id="weatherChart"></canvas>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
